@@ -1,0 +1,21 @@
+/* transition */
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+.notification-fade-enter-active {
+    transition: all .1s ease;
+}
+.notification-fade-leave-active {
+    transition: all .6s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.notification-fade-enter {
+    transform: translateX(10px);
+    opacity: 0;
+}
+.notification-fade-leave-to {
+    transform: translateX(-10px);
+    opacity: 0;
+}
